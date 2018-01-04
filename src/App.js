@@ -12,6 +12,7 @@ import HomePage from './Components/pages/homePage';
 import AboutMe from './Components/pages/aboutMe';
 import Projects from './Components/pages/projects';
 import Contact from './Components/pages/contact';
+import Workspace from './Components/pages/workspace';
 
 class App extends Component {
 
@@ -29,12 +30,14 @@ class App extends Component {
             <Link id="aboutme" className="menu-item" to="/About" onClick={this.isOpen="false"}>About Me</Link>
             <Link id="projects" className="menu-item" to="/Projects" onClick={this.isOpen="false"}>Projects</Link>
             <Link id="contact" className="menu-item" to="/Contact" onClick={this.isOpen="false"}>Contact</Link>
+            <Link id="workspace" className="menu-item" to="/Workspace" onClick={this.isOpen="false"}>Workspace</Link>
         </Menu>
         <div id="page-wrap">
           <Route exact path='/' component={HomePage} />
           <Route exact path='/About' component={AboutMe} />
           <Route exact path='/Projects' component={Projects} />
           <Route exact path='/Contact' component={Contact} />
+          <Route exact path='/Workspace' component={Workspace} />
 
         </div>
 
